@@ -25,6 +25,7 @@ async function registrar(req, res) {
         email,
         password: hashedPassword,
         name,
+        role: req.body.role || "user",
       },
     });
 
