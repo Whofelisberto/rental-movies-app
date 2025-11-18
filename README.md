@@ -40,7 +40,7 @@ rental-movies-app/
 └── .gitignore
 ```
 ## Projeto
-
+```bash
 ° controllers/: lida com a lógica dos endpoints (movies, rentals , users, etc)
 ° middlewares/: middlewares como autenticação, validação
 ° prisma/: esquema do banco de dados, migrações e cliente Prisma
@@ -49,6 +49,7 @@ rental-movies-app/
 ° utils/: funções auxiliares, helpers e utilitários genéricos
 ° docker-compose.yml: para orquestrar containers (app + banco de dados)
 ° package.json & package-lock.json: dependências do projeto
+```
 
 ## Aqui está uma estrutura das rotas (endpoints) da aplicação, organizadas por recurso:
 
@@ -115,3 +116,4 @@ JWT_SECRET=troque_por_uma_chave_forte_aqui
 ```bash
    npm run dev
 ```
+
