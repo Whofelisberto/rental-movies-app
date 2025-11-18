@@ -1,22 +1,26 @@
 {
-  "name": "rental-movies-app",
-  "version": "1.0.0",
-  "description": "Servidor Node.js com Prisma e nodemon",
-  "main": "src/index.js",
-  "scripts": {
-    "dev": "nodemon --watch src --ext js,json --exec \"node src/index.js\"",
-    "start": "node src/index.js",
-    "prisma": "prisma"
-  },
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.18.2",
-    "@prisma/client": "latest",
-    "dotenv": "^16.0.0"
-  },
-  "devDependencies": {
-    "prisma": "^5.8.0",
-    "nodemon": "^2.0.22"
-  }
+	"name": "rental-movies-app",
+	"version": "1.0.0",
+	"description": "Servidor Node.js com Prisma e nodemon",
+	"main": "src/index.js",
+	"type": "commonjs",
+	"scripts": {
+		"dev": "nodemon --watch src --ext js,json --exec node src/index.js",
+		"start": "node src/index.js",
+		"prisma": "prisma"
+	},
+	"author": "",
+	"license": "MIT",
+	"dependencies": {
+		"@prisma/client": "latest",
+		"bcrypt": "^5.1.0",
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.0",
+		"express": "^4.18.2",
+		"jsonwebtoken": "^9.0.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.22",
+		"prisma": "^5.8.0"
+	}
 }
