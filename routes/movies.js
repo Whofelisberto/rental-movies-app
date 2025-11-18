@@ -3,7 +3,7 @@ const { authenticateToken } = require('../middlewares/authMiddlewares')
 const { isAdmin } = require('../middlewares/isAdmin')
 const router = express.Router();
 
-const { criarMovie, listMovie , getMovieByID , updateMovie , deleteMovie } = require('../controllers/moviecontrollers');
+const { criarMovie, listMovie , getMovieByID , updateMovie , deleteMovie } = require('../controllers/movieControllers');
 
 router.get('/todos/movie', authenticateToken, listMovie);
 router.get('/movie/:id', authenticateToken, isAdmin, getMovieByID);
